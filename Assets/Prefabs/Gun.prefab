@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1742611677018413499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3739738988481535948}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3739738988481535948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742611677018413499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.70710707, y: 5.32907e-15, z: -1.7763566e-15, w: 0.7071066}
+  m_LocalPosition: {x: -0.000000001898746, y: -0.080004044, z: 0.010097397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6036019893956053030}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &9078306159797219238
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +226,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 08f61f4cdea5b944fab1fdea41f243d4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3588313851413558055}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 08f61f4cdea5b944fab1fdea41f243d4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3739738988481535948}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 08f61f4cdea5b944fab1fdea41f243d4, type: 3}
       insertIndex: -1
@@ -247,10 +281,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a0c5fd2d05c7ff459ea82287028b24a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cadencia: 0.5
   typeGun: 1
   damage: 10
-  firePoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 3739738988481535948}
+  bulletPrefab: {fileID: 44753557101587608, guid: a6d98947c59951040b5b1373c599851b, type: 3}
   weaponPosition: {x: 0.54999995, y: 0.21, z: 0.7}
   lifeBullet: 2
-  speedBullet: 10
+  speedBullet: 50
